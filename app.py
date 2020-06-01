@@ -17,19 +17,18 @@ class Todo(db.Model):
 
 @app.route('/',methods=['POST','GET'])
 def index():
-    pass
+    return render_template('index.html')
 
-   
-    
 
 @app.route("/delete/<int:id>")
 def delete(id):
     pass
+   
 
 @app.route('/update/<int:id>',methods=['GET','POST'])
 
 def update(id):
-   pass
+    pass
 
 if __name__=="__main__":
     app.run(debug=True)
