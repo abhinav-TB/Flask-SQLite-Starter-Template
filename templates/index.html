@@ -2,9 +2,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="/static/css/main.css" rel="stylesheet">
+    <title>Flask-SQLite Starter Kit</title>
 </head>
 <body>
-    <h1>hello all</h1>
+    <style>
+        .footer {
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: steelblue;
+          color: white;
+          text-align: center;
+        }
+    </style>
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="pill-nav">
+            <div class="pill-nav">
+                <ul class="navbar-nav ml-auto mt-2">
+                    <li class="nav-item"><a class="nav-link" href="/home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dailysa">Daily Self-Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/history">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/logout">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <center>
+        <h1>Hello All</h1>
+        <p>Go to '/templates' to edit and set up your custom HTML templates for the App</p>
+    </center>
+    <div class="footer">
+        <center>
+        <p>Flask-SQLite Starter Kit</p>
+        </center>
+    </div>
 </body>
 </html>
